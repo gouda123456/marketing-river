@@ -1,0 +1,544 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>نهر التسويق</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="نهر التسويق  هي شركه بيع منتجات باسعار مناسبه للجميع مخفضه">
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <link href="../css/Home.css" rel="stylesheet" />
+
+    <script src="../Scripts/bootstrap.js"></script>
+    <script src="../Scripts/jquery-3.7.0.js"></script>
+
+    <script>
+        function myFunction() {
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("mySearch");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myMenu");
+            li = ul.getElementsByTagName("li");
+
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+
+
+
+</head>
+
+<body>
+
+    <!-- nav -->
+
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark" id="up-page">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Home.html">
+                <img src="../image/Home/download.png" alt="Avatar Logo" class="nav-icon">
+            </a>
+            <a class="navbar-brand " href="Home.html">نهر التسويق</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../viwes/books.html" target="_blank">كتب </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../viwes/mobile.html" target="_blank">موبايلات </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../viwes/elc.html" target="_blank">اجهزه الكترونيه </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../viwes/clothes.html" target="_blank">ملابس </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../viwes/مستلزمات طبيه.html">مستلزمات طبيه </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../viwes/accessories.html" target="_blank">اكسسوارات
+                            كمبيوتر</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../viwes/sport.html" target="_blank">الرياضه</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../viwes/offers.html" target="_blank">عروض</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../viwes/sign-in.html" target="_blank">تسجيل الدخول</a>
+                    </li>
+                    <li class="search">
+                        <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="بحث.."
+                            title="اكتب ما تبحث عنه">
+                        <ul id="myMenu">
+                            <li><a href="../viwes/Home.html" target="_blank">الصفحه الرئيسيه</a></li>
+                            <li><a href="../viwes/books.html" target="_blank">كتب</a></li>
+                            <li><a href="../viwes/mobile.html" target="_blank">موبايلات</a></li>
+                            <li><a href="../viwes/elc.html" target="_blank">اجهزه الكترونيه</a></li>
+                            <li><a href="../viwes/clothes.html" target="_blank">ملابس</a></li>
+                            <li><a href="../viwes/مستلزمات طبيه.html">مستلزمات طبيه</a></li>
+                            <li><a href="../viwes/sport.html" target="_blank">الرياضه</a></li>
+                            <li><a href="../viwes/accessories.html" target="_blank">اكسسوارات كمبيوتر</a></li>
+                            <li><a href="../viwes/offers.html" target="_blank">عروض</a> </li>
+                            <li><a href="../viwes/sign-in.html" target="_blank">تسجيل الدخول</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- first section -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2"></div>
+
+            <!-- slide -->
+            <div class="col-8">
+                <div class="text-center">
+                    <h3>عروض</h3>
+                    <p>
+                        لمذيد من العروض إذهب الي
+                        <a href="../viwes/offers.html" target="_blank"><span>صفحه العروض</span> </a>
+                    </p>
+                </div>
+
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <img style="border-radius:20px;" src="../image/offers/10.png" class="d-block"
+                                alt="عرض 3 تيشيرت ديجيتال صيفى + عرض اشيك ٣ تيشيرت صيفي">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img style="border-radius:20px;" src="../image/offers/1.png" class="d-block"
+                                alt="كارديجان مشجر كاشمير+ كارديجان خامة فوم اسود">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img style="border-radius:20px;" src="../image/offers/2.png" class="d-block"
+                                alt="كارديجان بيزك طويل رمادي - كارديجان بيزك طويل كحل">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img style="border-radius:20px;" src="../image/offers/14.png" class="d-block"
+                                alt="ترينينج NY صيفى أصفر في أسود ترينينج NY صيفى نبيتي في أسود">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    <!-- Up Page-->
+                    <a class="up-top" href="#up-page"></a>
+                    <a class="up-bottom" href="#up-page"></a>
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+
+    <!-- cars -->
+    <div class="container">
+        <div class="text-center">
+            <h3>النتائج</h3>
+            <p>قد تختلف الأسعار والتفاصيل الأخرى حسب حجم المنتج ولونه.</p>
+        </div>
+        <div class="row card-product">
+            <div class="col-lg-3 p-1 col-md-4 col-sm-6 product">
+                <img src="../image/اكسسوارات/1 (1).jpg" class="card-img-top" alt="لوحة مفاتيح">
+
+                <div class="ccard">
+                    <h5 class="card-title">لوحة مفاتيح</h5>
+                    <div>
+                        <p>Vesta Vesta USB Keyboard For PC &amp; Laptop - KB-47021</p>
+                        <p>سعر المنتج ج129.00</p>
+                        <a href="#" class="btn mt-auto btn-success ">عرض التفاصيل</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-3 p-1 col-md-4 col-sm-6 product ">
+                <img src="../image/اكسسوارات/1 (12).jpg" class="card-img-top" alt="مروحة يد">
+
+                <div class="ccard">
+                    <h5 class="card-title">مروحة يد</h5>
+                    <div>
+                        <p>مروحة يد صغيرة محمولة قابلة للشحن</p>
+                        <p>سعر المنتج ج333.00</p>
+                        <a href="#" class="btn mt-auto btn-success ">عرض التفاصيل</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 p-1 col-md-4 col-sm-6 product ">
+                <img src="../image/اكسسوارات/1 (3).jpg" class="card-img-top" alt="سماعات راس">
+
+                <div class="ccard">
+                    <h5 class="card-title">سماعات راس</h5>
+                    <div>
+                        <p>Philips SBCHL145 Over The Ear Headphone - Dark Gray</p>
+                        <p>سعر المنتج ج225.00</p>
+                        <a href="#" class="btn mt-auto btn-success ">عرض التفاصيل</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 p-1 col-md-4 col-sm-6 product ">
+                <img src="../image/اكسسوارات/1 (7).jpg" class="card-img-top" alt="هيدفون">
+
+                <div class="ccard ">
+                    <h5 class="card-title">هيدفون</h5>
+                    <div>
+                        <p>Onikuma هيدفون جيمينج مضئ للألعاب NIKUMA K1B</p>
+                        <p>سعر المنتج 555.00ج</p>
+                        <a href="#" class="btn mt-auto btn-success ">عرض التفاصيل</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-3 p-1 col-md-4 col-sm-6 product">
+                <img src="../image/books/book6.jpg" class="card-img-top" alt="explorer book">
+
+                <div class="ccard">
+                    <h5 class="card-title lang-en">explorer</h5>
+                    <p>
+                        يتحدث الكتاب عن اهمية اكتشاف العالم و مدي تاثيره علينا و علي نظرتنا للحياة
+                    </p>
+                    <p></p>
+                    <a href="#" class="btn mt-auto btn-success ">عرض التفاصيل</a>
+                </div>
+
+            </div>
+            <div class="col-lg-3 p-1 col-md-4 col-sm-6 product">
+                <img src="../image/books/book7.jpg" class="card-img-top" alt="reminder of him book">
+
+                <div class="ccard">
+                    <h5 class="card-title lang-en">reminder of him</h5>
+                    <p>
+                        الكتاب يتكلم عن اهمية شريك الحياة و تاثيره علي الفرد بعد فراقه
+                    </p>
+                    <p></p>
+                    <a href="#" class="btn mt-auto btn-success ">عرض التفاصيل</a>
+                </div>
+
+            </div>
+            <div class="col-lg-3 p-1 col-md-4 col-sm-6 product ">
+                <img src="../image/books/book8.jpg" class="card-img-top" alt="the first 90 days book">
+
+                <div class="ccard">
+                    <h5 class="card-title lang-en">the first 90 days</h5>
+                    <p>
+                        يتكلم الكتاب عن اول 90 يوم من بداية تعلم تقنية ما
+                    </p>
+                    <p></p>
+                    <a href="#" class="btn mt-auto btn-success ">عرض التفاصيل</a>
+                </div>
+
+            </div>
+            <div class="col-lg-3 p-1 col-md-4 col-sm-6 product ">
+                <img src="../image/books/book11.jpg" class="card-img-top" alt="ken follett">
+
+                <div class="ccard">
+                    <h5 class="card-title lang-en">ken follett</h5>
+                    <p>
+                        رواية رعب تتكلم عن بعض الاشخاص الذين علقو في جزيرة
+                    </p>
+                    <p></p>
+                    <a href="#" class="btn mt-auto btn-success ">عرض التفاصيل</a>
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 p-1 col-md-4 col-sm-6 product ">
+                <img src="../image/mobile/16.jpg" class="card-img-top" alt="sect led">
+
+                <div class="ccard">
+                    <h5 class="card-title lang-en">sect led</h5>
+                    <p>
+                        هاتف بمساحة 128 جيجا و 16 رام و لديه كاميرات عالية الجودة
+                    </p>
+                    <p></p>
+                    <a href="#" class="btn mt-auto btn-success ">عرض التفاصيل</a>
+                </div>
+            </div>
+            <div class="col-lg-3 p-1 col-md-4 col-sm-6 product ">
+                <img src="../image/mobile/16.jpg" class="card-img-top" alt="HuaWai">
+
+                <div class="ccard">
+                    <h5 class="card-title lang-en">HuaWai</h5>
+                    <p>
+                        هاتف بمساحة 128 جيجا و 16 رام و لديه كاميرات عالية الجودة
+                    </p>
+                    <p></p>
+                    <a href="#" class="btn mt-auto btn-success ">عرض التفاصيل</a>
+                </div>
+            </div>
+            <div class="col-lg-3 p-1 col-md-4 col-sm-6 product ">
+                <img src="../image/mobile/10.jpg" class="card-img-top" alt="samsung A04e">
+
+                <div class="ccard">
+                    <h5 class="card-title lang-en">samsung A04e</h5>
+                    <p>
+                        هاتف بمساحة 128 جيجا و 16 رام و لديه كاميرات عالية الجودة
+                    </p>
+                    <p></p>
+                    <a href="#" class="btn mt-auto btn-success ">عرض التفاصيل</a>
+                </div>
+            </div>
+            <div class="col-lg-3 p-1 col-md-4 col-sm-6 product ">
+                <img src="../image/mobile/16.jpg" class="card-img-top " alt="oppo">
+
+                <div class="ccard">
+                    <h5 class="card-title lang-en">oppo</h5>
+                    <p>
+                        هاتف بمساحة 128 جيجا و 16 رام و لديه كاميرات عالية الجودة
+                    </p>
+                    <p></p>
+                    <a href="#" class="btn mt-auto btn-success ">عرض التفاصيل</a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 p-1 col-md-4 col-sm-6 product ">
+                <img src="../image/sport/1.jpg" class="card-img-top" alt="حزام مقاومة من السيليكون">
+
+                <div class="ccard">
+                    <h5 class="card-title">حزام مقاومة من السيليكون</h5>
+                    <p>
+                        حزام مقاوم لتعزيز اعصاب الجسم
+                    </p>
+                    <p></p>
+                    <a href="#" class="btn mt-auto btn-success ">عرض التفاصيل</a>
+                </div>
+            </div>
+            <div class="col-lg-3 p-1 col-md-4 col-sm-6 product ">
+                <img src="../image/sport/13.jpg" class="card-img-top" alt="عجلة دوارة لتمارين عضلات البطن">
+
+                <div class="ccard">
+                    <h5 class="card-title">عجلة لتمارين عضلات البطن</h5>
+                    <p>
+                        عجلة تقوي قوة التحمل و كثافة عضلات البطن ينصح ب استخدامها ب شدة
+                    </p>
+                    <p></p>
+                    <a href="#" class="btn mt-auto btn-success ">عرض التفاصيل</a>
+                </div>
+            </div>
+            <div class="col-lg-3 p-1 col-md-4 col-sm-6 product ">
+                <img src="../image/sport/4.jpg" class="card-img-top" alt="hand grap">
+
+                <div class="ccard">
+                    <h5 class="card-title lang-en">hand grap</h5>
+                    <p>
+                        اداة يتم الضغط عليها ب اليد لتقوية اعصابها
+                    </p>
+                    <p></p>
+                    <a href="#" class="btn mt-auto btn-success ">عرض التفاصيل</a>
+                </div>
+            </div>
+            <div class="col-lg-3 p-1 col-md-4 col-sm-6 product ">
+                <img src="../image/sport/19.jpg" class="card-img-top" alt="سلم">
+
+                <div class="ccard">
+                    <h5 class="card-title">سلم</h5>
+                    <p>
+                        سلم يتم الصعود و الهبوط منه لزيادة قوة التحمل
+                    </p>
+                    <p></p>
+                    <a href="#" class="btn mt-auto btn-success ">عرض التفاصيل</a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 p-1 col-md-4 col-sm-6 product ">
+                <img src="../image/elc/7.jpg" class="card-img-top" alt="micro sd">
+
+                <div class="ccard">
+                    <h5 class="card-title lang-en">micro sd</h5>
+                    <p>
+                        بطاقة ذاكرة مايكرو للهواتف المحمولة بسعى 64 جيجا
+                    </p>
+                    <p></p>
+                    <a href="#" class="btn mt-auto btn-success ">عرض التفاصيل</a>
+                </div>
+            </div>
+            <div class="col-lg-3 p-1 col-md-4 col-sm-6 product ">
+                <img src="../image/elc/16.jpg" class="card-img-top" alt="flash">
+
+                <div class="ccard">
+                    <h5 class="card-title lang-en">flash</h5>
+                    <p>
+                        مساحة تخزين خارجية تقدر ب 64 جيجا و ايضا سريعة
+                    </p>
+                    <p></p>
+                    <a href="#" class="btn mt-auto btn-success ">عرض التفاصيل</a>
+                </div>
+            </div>
+            <div class="col-lg-3 p-1 col-md-4 col-sm-6 product ">
+                <img src="../image/elc/8.jpg" class="card-img-top" alt="SSD">
+
+                <div class="ccard">
+                    <h5 class="card-title lang-en">SSD</h5>
+                    <p>
+                        هارد سسد خارجي بمساحة 256 جيجا دوت ام تو
+                    </p>
+                    <p></p>
+                    <a href="#" class="btn mt-auto btn-success ">عرض التفاصيل</a>
+                </div>
+            </div>
+            <div class="col-lg-3 p-1 col-md-4 col-sm-6 product ">
+                <img src="../image/elc/19.jpg" class="card-img-top" alt="laptob hp">
+
+                <div class="ccard">
+                    <h5 class="card-title lang-en">laptob hp</h5>
+                    <p>
+                        لابتوب لينوفو ياتي بمعالج الجيل ال حادي عشر
+                    </p>
+                    <p></p>
+                    <a href="#" class="btn mt-auto btn-success ">عرض التفاصيل</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- تواصل معنا-->
+    <div class="container">
+        <div class="text-center m-5">
+            <h3> تواصل معنا</h3>
+            <p> يمكنك التواصل معنا في اي وقت</p>
+        </div>
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-6">
+                    <div class="card-body h-50">
+                        <h5 class="card-title">اتصل بنا</h5>
+                        <p class="card-text">لديك استفسار او معلومه عايز تتأكد منها او شكوه لسبب ما بأمكانك التواصل معنا
+                            في وقت . "دقائق و نرد علي حضرتك"</p>
+
+                        <form>
+                            <div class="form-control">
+                                <label for="exampleFormControlInput1" class="form-label">البريد الالكتروني</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="name@gmail.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">اكتب رسالتك</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div class="form-control form-check">
+                                <input type="checkbox" class="from-check-input" id="exampleCheck1" />
+                                <label class="form-check-label" for="exampleCheck1">متأكد من الإرسال </label>
+                            </div>
+                            <button type="submit" class="btn btn-success">إرسال</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="../image/Home/download (3).jpeg" class="card-img h-100 w-100" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white" style="border-top:10px solid #ffc107">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Section Social media -->
+            <section class="mb-4">
+                <p>مواقع التواصل الأجتماعي الخاص بنا </p>
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" target="_blank"
+                    href="https://www.facebook.com/profile.php?id=100085010411351" role="button">
+                    <img src="../image/Home/images (2).png" alt="Avatar Logo" class="Footer-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" target="_blank"
+                    href="https://twitter.com/Mohamed131Hosny" role="button">
+                    <img src="../image/Home/images (1).png" alt="Avatar Logo" class="Footer-icon" />
+                    <i class="fa fa-twitter"></i>
+                </a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://google.com/"
+                    role="button">
+                    <img src="../image/Home/Google__G__Logo.svg.png" alt="Avatar Logo" class="Footer-icon" />
+                    <i class="fa fa-google"></i>
+                </a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" target="_blank"
+                    href="https://www.instagram.com/mohamed_abdelsatar1310/" role="button">
+                    <img src="../image/Home/images.jpeg" alt="Avatar Logo" class="Footer-icon" />
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <!-- WhatsApp -->
+                <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://web.whatsapp.com/"
+                    role="button">
+                    <img src="../image/Home/download (4).jpeg" alt="Avatar Logo" class="Footer-icon" />
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+
+            </section>
+            <br>
+            <!-- Section Text -->
+            <section class="mb-4">
+                <p>
+                    هذه صفحات الموقع وقريبا ثيتم إضافه الشركات المتعامل معها
+                </p>
+            </section>
+            <!-- Section Links -->
+            <section class="">
+                <!--Grid row-->
+                <h5 class="container text-warning footer-h5">منتجاتنا</h5>
+
+                <div class="row">
+                    <a href="../viwes/books.html" class="text-white footer-a"> الكتب</a>
+
+                    <a href="../viwes/mobile.html" class="text-white footer-a">موبايلات</a>
+
+                    <a href="../viwes/elc.html" class="text-white footer-a">اجهزه الكترونيه</a>
+
+                    <a href="../viwes/clothes.html" class="text-white footer-a">ملابس</a>
+
+                    <a href="../viwes/مستلزمات طبيه.html" class="text-white footer-a">مستلزمات طبيه</a>
+
+                    <a href="../viwes/sport.html" class="text-white footer-a">الرياضه</a>
+
+                    <a href="../viwes/accessories.html" class="text-white footer-a">اكسسوارات</a>
+
+                    <a href="../viwes/offers.html" class="text-white footer-a">عروض</a>
+                </div>
+                <a href="../viwes/sign-in.html" class="container text-warning" style="text-decoration: none;">تسجيل
+                    الدخول</a>
+
+            </section>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+
+
+</body>
+
+</html>
